@@ -38,7 +38,7 @@ while True:
     # to see whether the minute hand is pointing to some multiple of 5, therefore scrapes every 5 minutes
 
         r = session.get("http://search.smzdm.com/?c=home&s=路由器&order=time")
-        # the page it scrapes, use server built-in search in case the web updates too frequently that it don't catch up and reduce requests
+        # the page it scrapes, use server built-in search in case the web updates too frequently that it don't catch up therefore reduce requests
 
         soup = BeautifulSoup(r.text)
         tags = soup.find_all("h5") # article tags
